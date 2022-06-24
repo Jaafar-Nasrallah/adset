@@ -3,6 +3,18 @@ public class AdsetAnalysis {
     private int clicks;
     private float price;
 
+    public String getCountry() {
+        return country;
+    }
+
+    public int getClicks() {
+        return clicks;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
     public AdsetAnalysis(String country, int clicks, float price) {
         this.country = country;
         this.clicks = clicks;

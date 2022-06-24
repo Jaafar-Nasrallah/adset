@@ -9,9 +9,53 @@ public class Adset implements IAdsetManager {
     private float Budget;
     private Platform platform;
     private float RemainingBudget;
+
+    public String getTitle() {
+        return Title;
+    }
+
+    public float getBudget() {
+        return Budget;
+    }
+
+    public Platform getPlatform() {
+        return platform;
+    }
+
+    public float getRemainingBudget() {
+        return RemainingBudget;
+    }
+
+    public float getCPC() {
+        return CPC;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
     private float CPC;
     private Ad[] Ads;
     private Status status;
+
+    public Ad[] getAds() {
+        return Ads;
+    }
+
+    public void setAds(Ad[] ads) {
+        Ads = ads;
+    }
+
+    public Adset(String id, String title, float budget, Platform platform, float remainingBudget, float CPC, Ad[] ads, Status status) {
+        Id = id;
+        Title = title;
+        Budget = budget;
+        this.platform = platform;
+        RemainingBudget = remainingBudget;
+        this.CPC = CPC;
+        Ads = ads;
+        this.status = status;
+    }
 
     @Override
     public boolean CheckIfAdsetIsActive() {

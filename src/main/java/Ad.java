@@ -10,4 +10,16 @@ public class Ad {
         return this.adClicks;
     }
 
+    public void setAdClicks(AdClick[] adClicks) {
+        this.adClicks = adClicks;
+    }
+
+    public Ad(String id, String title, String imageLink, String url, Adset adset, AdClick[] adClicks) {
+        this.id = id;
+        this.title = title;
+        this.imageLink = imageLink;
+        this.url = url;
+        this.adset = adset;
+        this.adClicks = adClicks;
+    }
 }
